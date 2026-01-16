@@ -39,5 +39,3 @@ Al terminar, tendrás el instalador en la carpeta `releases`.
 npm run build:win
 ```
 
----
-**Nota sobre Docker**: Se creó configuración Docker (`docker-compose.yml`), pero **NO** sirve para generar el `.exe` de Windows debido a limitaciones de la librería `drivelist` en Linux. Úsalo solo si quieres desarrollar en Linux.
