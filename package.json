@@ -58,7 +58,7 @@
     "release": "electron-builder",
     "postbuild": "node build/target.js --clean",
     "xinstall": "cd app && ncu -u --packageFile package.json && ncu -a --packageFile package.json && npm i && cd .. && ncu -u --packageFile package.json && ncu -a --packageFile package.json && npm i",
-    "postinstall": "electron-builder install-app-deps && cd app && sh ../node_modules/.bin/electron-rebuild && cd .. && sh ./node_modules/.bin/electron-rebuild"
+    "postinstall": "electron-builder install-app-deps && cd app && ../node_modules/.bin/electron-rebuild && cd .. && ./node_modules/.bin/electron-rebuild"
   },
   "standard": {
     "globals": [
@@ -81,9 +81,7 @@
       "langObj",
       "persistantData"
     ],
-    "ignore": [
-
-    ]
+    "ignore": []
   },
   "jshintConfig": {
     "esversion": 8
